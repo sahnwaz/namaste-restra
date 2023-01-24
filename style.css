@@ -612,4 +612,4 @@ h1, h2, h3 {font-weight: bold; color: var(--white);}
     .about-img .img-box h3 {font-size: 5vw;}
 }
 
-@media(max-width:450px) {.menu-item-title{max-width: 10%;}}
+@media(max-width:450px) {.menu-item-title{max-width: 15%;}}
