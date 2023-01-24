@@ -1,0 +1,128 @@
+html, body { min-height: 100%;}
+
+body, div, form, input, select { 
+padding: 0;
+margin: 0;
+outline: none;
+font-family: calibri, Arial, sans-serif;
+font-size: 16px;
+color: rgb(70, 69, 69);
+line-height: 22px;
+}  
+
+body{
+  background-image: url("img/fback.jpg");
+  background-size: cover;
+}
+
+h1, p {text-align: center;}
+
+label {margin-top: 15px; font-weight: bold; display: block; }
+
+span {color: red;}
+
+.testbox {
+display: flex;
+justify-content: center;
+align-items: center;
+height: inherit;
+max-width: 600px;
+margin: 20px auto;
+padding: 3px;
+}
+
+form {
+width: 100%;
+padding: 20px;
+background: #fff;
+box-shadow: 2px 20px 20px black;
+border-radius: 5px;
+}
+
+.cls_img{
+  opacity: 0.8; width: 35%; margin: auto; display: block;
+}
+
+input {
+width: calc(100% - 10px);
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+vertical-align: middle;
+}
+
+input:hover, textarea:hover, select:hover {
+outline: none;
+border: 1px solid #095484;
+}
+
+.name input {margin-bottom: 10px;}
+
+select {
+padding: 7px 0;
+border-radius: 3px;
+border: 1px solid #ccc;
+background: #e6eef7;
+}
+
+option {background: #fff;}
+
+select, table {width: 100%;}
+
+.day-visited, .time-visited {position: relative;}
+
+.day-visited input, .time-visited input {
+width: calc(100% - 12px); background: #e6eef7;}
+
+input[type="date"]::-webkit-inner-spin-button {display: none;}
+
+input[type="time"]::-webkit-inner-spin-button {margin: 2px 22px 0 0;}
+
+.day-visited i, .time-visited i, input[type="date"]::-webkit-calendar-picker-indicator {
+position: absolute;
+top: 8px;
+font-size: 20px;
+}
+
+.day-visited i, .time-visited i {right: 5px; z-index: 1; color: #a9a9a9;}
+
+[type="date"]::-webkit-calendar-picker-indicator {right: 0; z-index: 2; opacity: 0.8; }
+
+
+.question-answer label {display: block; padding: 0 20px 10px 0;}
+
+.question-answer input {width: auto; margin-top: -2px;}
+
+th, td {width: 18%; padding: 15px 0; border-bottom: 1px solid #ccc; text-align: center;
+vertical-align: unset;
+line-height: 18px;
+}
+
+.first-col {width: 25%; text-align: left; }
+
+textarea {width: calc(100% - 6px); resize: none;}
+
+.btn-block {margin-top: 20px; text-align: center;}
+
+button {
+width: 150px;
+padding: 10px;
+border: none;
+border-radius: 5px; 
+background-color: rgb(63, 133, 160);
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+}
+
+button:hover {background-color: rgb(15, 87, 116);}
+
+@media (max-width: 800px) {
+ table{font-size: 10px} 
+}
+
+@media (min-width: 568px) {
+  .name {display: flex; justify-content: space-between; }
+  .name input {width: 47%; margin-bottom: 0;}
+  th, td {word-break: keep-all;}
+}

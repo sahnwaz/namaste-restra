@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Namaste Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div class="testbox" >
+      <form action="/">
+        <img src="img/logo.png" alt="ok" class="cls_img">
+        <h1>Feedback Form</h1>
+        <p>Please help us to improve our services by filling this form.<br>Thank you!</p>
+        <label for="fname">Your Name<span>*</span></label>
+          <div class="name">
+            <input type="text" name="name" id="fname" placeholder="First" required />
+            <input type="text" name="name" placeholder="Last" />
+          </div>
+
+        <label for="eml">Your Email</label>
+        <input type="email" name="email" id="eml" placeholder="Email" />
+
+        <label>Your Age<span>*</span></label>        
+        <select>
+          <option class="disabled" value="location" disabled selected>Select Age*</option>
+          <option value="under 13">Under 13</option>
+          <option value="13-17">13-17</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="45-54">45-54</option>
+          <option value="55 or older">55 or older</option>
+        </select>
+
+        <label>Location You Visited<span>*</span></label>
+        <select>
+          <option class="disabled" value="location" disabled selected>Select Location*</option>
+          <option value="1">BTM Layout 2nd</option>
+          <option value="2">Location 2</option>
+          <option value="3">Location 3</option>
+          <option value="4">Location 4</option>
+          <option value="5">Location 5</option>
+        </select>
+
+        <label>Day Visited<span>*</span></label>        
+          <div class="day-visited">
+            <input type="date" name="dayvisited" required />
+          </div>
+        
+        <label>Time Visited<span>*</span></label>                
+        <div class="time-visited">
+          <input type="time" name="timevisited" required/>
+        </div>
+
+        <label>Dine In / Take Out<span>*</span></label>        
+        <div class="question-answer">
+          <input type="radio" value="DineIn" name="Dine" /> Dine In <br>
+          <input type="radio" value="TakeOut" name="Dine" /> Take Out <br>
+        </div>
+
+
+        <label>Share your Feelings<span>*</span></label>             
+        <table>
+          <tr>
+            <th class="first-col"></th>
+            <th>Amazing</th>
+            <th>Good</th>
+            <th>Decent</th>
+            <th>Disappointing</th>
+          </tr>
+          <tr>
+            <td class="first-col">Food Quality</td>
+            <td><input type="radio" value="fq1" name="Food" /></td>
+            <td><input type="radio" value="fq2" name="Food" /></td>
+            <td><input type="radio" value="fq3" name="Food" /></td>
+            <td><input type="radio" value="fq4" name="Food" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Overall Service Quality</td>
+            <td><input type="radio" value="osq1" name="Service" /></td>
+            <td><input type="radio" value="osq2" name="Service" /></td>
+            <td><input type="radio" value="osq3" name="Service" /></td>
+            <td><input type="radio" value="osq4" name="Service" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Speed of Service</td>
+            <td><input type="radio" value="sos1" name="Speed" /></td>
+            <td><input type="radio" value="sos2" name="Speed" /></td>
+            <td><input type="radio" value="sos3" name="Speed" /></td>
+            <td><input type="radio" value="sos4" name="Speed" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Price</td>
+            <td><input type="radio" value="pr1" name="Price" /></td>
+            <td><input type="radio" value="pr2" name="Price" /></td>
+            <td><input type="radio" value="pr3" name="Price" /></td>
+            <td><input type="radio" value="pr4" name="Price" /></td>
+          </tr>
+          <tr>
+            <td class="first-col">Overall Experience</td>
+            <td><input type="radio" value="oe1" name="Experience" /></td>
+            <td><input type="radio" value="oe2" name="Experience" /></td>
+            <td><input type="radio" value="oe3" name="Experience" /></td>
+            <td><input type="radio" value="oe4" name="Experience" /></td>
+          </tr>
+        </table>
+        <label for="texta">Any Comments, Questions or Suggestions?</label>
+        <textarea rows="5" cols="20" id="texta"></textarea>
+        <div class="btn-block">
+          <button type="submit" href="/">Send Feedback</button>
+
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
