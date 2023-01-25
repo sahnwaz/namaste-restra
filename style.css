@@ -366,8 +366,6 @@ h1, h2, h3 {font-weight: bold; color: var(--white);}
 
 .menu-item:hover {transform: scale(1.1); border: none; }
 
-
-
 .menu-item p {
     font-size: 20px;
     letter-spacing: 2px;
@@ -375,6 +373,7 @@ h1, h2, h3 {font-weight: bold; color: var(--white);}
     color: var(--main-color);
     text-transform: capitalize;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .menu-item:hover p { color: var(--white) }
@@ -391,7 +390,7 @@ h1, h2, h3 {font-weight: bold; color: var(--white);}
 }
 
 .menu-item-title img{
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 4px;
 }
 
